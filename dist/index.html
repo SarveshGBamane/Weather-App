@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    
+<div id="main" 
+    class="h-screen w-screen flex flex-col items-center justify-center 
+            bg-[url('https://images.pexels.com/photos/11625037/pexels-photo-11625037.jpeg')] bg-cover bg-center" >
+
+        <div id="watherApp" class="flex flex-col items-center bg-blue-300 rounded-xl p-4 shadow-2xl ">
+            <div id="header" >
+                <h1 class="text-4xl text-blue-950 font-semibold"> Weather App</h1>
+            </div>
+
+            <div id="controls" class="flex flex-col items-center">
+
+                <input type="text" id="ip" placeholder="Enter city name " class="border-1 rounded-sm mt-4 h-12 w-72 border-blue-800 text-lg bg-blue-100 p-2"  >
+
+                <button id="btn" class="bg-blue-500 w-28 h-10 text-center mt-3 rounded-lg text-base text-slate-50 hover:bg-blue-600 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-90" >
+                    Get Weather
+                </button>
+
+            </div>
+
+
+            <div id="display_data" class="bg-blue-100 p-2 mt-2 w-72 h-auto flex flex-col items-center rounded-lg">
+                <p id="location" class="font-semibold text-2xl mb-3 text-center">
+                    Location
+                </p>
+
+                
+
+
+                <p id="temp" class="text-6xl mb-4 text-center font-normal">
+                    00.0 °C
+                </p>
+
+                <p id="weather" class="font-medium text-2xl mb-4 text-center">
+                    -
+                </p>
+
+                <div id="extraData" class="flex flex-row gap-0 " >
+
+                    <div id="1c" class="flex flex-col items-center">
+
+                        <div id="windDiv" class="flex flex-col items-center h-26 w-30 bg-blue-300 rounded-lg m-2 ">
+                            <h3 class="font-semibold m-1  text-lg mb-3">Wind</h3>
+
+                            <p id="wind" class="overflow-x-auto w-28 text-center bg-blue-100 text-lg ml-1 mr-1 
+                            
+                            font-semibold text-slate-900 rounded-lg">
+                                0.00 m/s
+                            </p>
+                        </div>
+
+                        <div id="HumidityDiv" class="flex flex-col items-center h-26 w-30 bg-blue-300 rounded-lg m-2  ">
+                            <h3 class="mb-3 font-semibold m-1 text-lg ">Humidity</h3>
+
+                            <p id="humidity" class="overflow-x-auto w-28 text-center bg-blue-100 text-lg ml-1 mr-1 font-semibold text-slate-900 rounded-lg">0%</p>
+                        </div>
+                    </div>
+
+                    <div id="2c" class="flex flex-col items-center">
+                        <div id="pressureDiv" class="flex flex-col items-center h-26 w-30  bg-blue-300 rounded-lg m-2 ">
+                            <h3 class="mb-3 font-semibold m-1 text-lg">Pressure</h3>
+
+                            <p id="pressure" class="overflow-x-auto w-28 text-center bg-blue-100 text-lg ml-1 mr-1 font-semibold text-slate-900 rounded-lg">0 hPa</p>
+                        </div>
+
+                        <div id="ccDiv" class="flex flex-col items-center h-26 w-30  bg-blue-300 rounded-lg m-2 ">
+                            <h3 class="mb-3 font-semibold m-1 text-lg">Cloud Cover</h3>
+
+                            <p id="cloudCover" class="overflow-x-auto w-28 text-center bg-blue-100 text-lg ml-1 mr-1 font-semibold text-slate-900 rounded-lg">85%</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
