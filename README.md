@@ -9,7 +9,7 @@ Experience the app in action here:
 
 ##  Screenshot
 
-![Project Screenshot](assets/project_image.png)
+![Project Screenshot](weather.png)
 
 ##  Features
 
